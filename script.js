@@ -199,16 +199,16 @@ document.onkeydown = function(event) {
 	}
     // Если игрок поднимится выше 60 пикселей тогда опускаем его на 15 пикскелей
 	if(gamer.offsetTop < 60) {
-		gamer.style.top = gamer.offsetTop + 30 + "px";
-		if(event.keyCode == "87") {
-			gamer.style.top = gamer.offsetTop + 20 + "px";
+		gamer.style.top = gamer.offsetTop + 40 + "px";
+		if(event.keyCode == "87" || event.keyCode == "32") {
+			gamer.style.top = gamer.offsetTop + 0 + "px";
 		}
 	}
 	// Если игрок опуститься ниже 350 пикселей тогда поднимаем его на 15 пикскелей
-	if(gamer.offsetTop > 400) {
-		gamer.style.top = gamer.offsetTop - 30 + "px";
-		if(event.keyCode == "83") {
-			gamer.style.top = gamer.offsetTop - 20 + "px";
+	if(gamer.offsetTop > 500) {
+		gamer.style.top = gamer.offsetTop - 40 + "px";
+		if(event.keyCode == "83" || event.keyCode == "32") {
+			gamer.style.top = gamer.offsetTop - 0 + "px";
 		}
 	}
 	/*
